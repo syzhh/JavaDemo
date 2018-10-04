@@ -79,8 +79,8 @@ public class Program {
 
         // 把任务、Cron触发器加入调度器
         Date ft = scheduler.scheduleJob(job, cronTrigger);
-        //_log.info(jft + "时已计划执行" + job.getKey() + "，且基于" + cronTrigger.getCronExpression() + "Cron表达式重复执行。");
-        System.out.println(ft + "时已计划执行" + job.getKey() + "，且基于" + cronTrigger.getCronExpression() + "Cron表达式重复执行。");
+        //_log.info(jft + "时计划执行【" + job.getKey() + "】，且基于【" + cronTrigger.getCronExpression() + "】Cron表达式重复执行。");
+        System.out.println(ft + "时计划执行【" + job.getKey() + "】，且基于【" + cronTrigger.getCronExpression() + "】Cron表达式重复执行。");
 
         // 创建【任务22】
         job = newJob(SimpleJob.class).withIdentity("任务名称22", "任务组名").build();
@@ -88,8 +88,8 @@ public class Program {
         cronTrigger = newTrigger().withIdentity("触发器名称22", "触发器组名").withSchedule(cronSchedule("15 0/2 * * * ?")).build();
 
         ft = scheduler.scheduleJob(job, cronTrigger);
-        //_log.info(jft + "时已计划执行" + job.getKey() + "，且基于" + cronTrigger.getCronExpression() + "Cron表达式重复执行。");
-        System.out.println(ft + "时已计划执行" + job.getKey() + "，且基于" + cronTrigger.getCronExpression() + "Cron表达式重复执行。");
+        //_log.info(jft + "时计划执行【" + job.getKey() + "】，且基于【" + cronTrigger.getCronExpression() + "】Cron表达式重复执行。");
+        System.out.println(ft + "时计划执行【" + job.getKey() + "】，且基于【" + cronTrigger.getCronExpression() + "】Cron表达式重复执行。");
 
         // 开启调度器
         scheduler.start();
