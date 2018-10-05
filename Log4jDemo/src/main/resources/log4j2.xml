@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="WARN">
+    <properties>
+        <!--AppID 150202，用于区分哪个应用的日志-->
+        <property name="LOG_HOME">D:/Log4j2/150202</property>
+        <property name="FILE_NAME">mylog</property>
+        <property name="log.level">debug</property>
+    </properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="记录时间：%d{yyyy-MM-dd HH:mm:ss.SSS} 线程：[%t] 日志级别：%-5level Logger名：%logger{36} - 日志消息：%msg%n"/>
+        </Console>
+
+        <RollingRandomAccessFile name="RollingRandomAccessFile" fileName="${LOG_HOME}/${FILE_NAME}.log" filePattern="${LOG_HOME}/$${date:yyyy-MM}/${FILE_NAME}-%d{yyyy-MM-dd HH-mm}-%i.log">
+            <PatternLayout pattern="记录时间：%d{yyyy-MM-dd HH:mm:ss.SSS} 线程：[%t] 日志级别：%-5level Logger名：%logger{36} - 日志消息：%msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingRandomAccessFile>
+
+        <Async name="AsyncAppender">
+            <AppenderRef ref="RollingRandomAccessFile"/>
+        </Async>
+    </Appenders>
+    <Loggers>
+        <Logger name="RollingRandomAccessFileLogger" level="${log.level}" additivity="true">
+            <AppenderRef ref="AsyncAppender" />
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref="Console" />
+        </Root>
+    </Loggers>
+</Configuration>
