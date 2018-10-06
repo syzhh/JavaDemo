@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8a05586-7ce0-4694-bd2d-557c0e5822f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/log4j/Log4jDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../RabbitMQDemo/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../RabbitMQDemo/01基本用法/Consumer/target/classes/rabbitmq/Receive$1.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../RabbitMQDemo/01基本用法/Consumer/target/classes/rabbitmq/Receive.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../RabbitMQDemo/01基本用法/Publisher/target/classes/rabbitmq/Send.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../RedisDemo/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/log4j/Log4jDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/log4j/Log4jDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RabbitMQDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RabbitMQDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RedisDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RedisDemo/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -52,14 +45,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="357" />
+          <entry key="java" value="459" />
           <entry key="properties" value="323" />
           <entry key="xml" value="194" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="357" />
+          <entry key="JAVA" value="459" />
           <entry key="Properties" value="323" />
           <entry key="XML" value="194" />
         </counts>
@@ -71,8 +64,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/log4j/Log4jDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+            <state relative-caret-position="247">
+              <caret line="13" column="95" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="95" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,8 +111,8 @@
         <option value="$PROJECT_DIR$/resource/log4j.properties" />
         <option value="$PROJECT_DIR$/resource/log4j2.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/log4j/Log4jDemo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/log4j/Log4jDemo.java" />
       </list>
     </option>
   </component>
@@ -197,7 +193,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538752645215" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538843741310" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MetricsDemo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -294,7 +290,7 @@
       <workItem from="1538472222168" duration="13806000" />
       <workItem from="1538532613977" duration="162000" />
       <workItem from="1538533652052" duration="325000" />
-      <workItem from="1538562124837" duration="10469000" />
+      <workItem from="1538562124837" duration="13532000" />
     </task>
     <servers />
   </component>
@@ -307,7 +303,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24762000" />
+    <option name="totallyTimeSpent" value="27825000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,7 +315,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3267776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -330,7 +327,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5442623" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5442623" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -401,8 +398,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/log4j/Log4jDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        <state relative-caret-position="247">
+          <caret line="13" column="95" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
