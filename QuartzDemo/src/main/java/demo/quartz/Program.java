@@ -1,20 +1,15 @@
 package demo.quartz;
 
+import java.util.Date;
+
 import static org.quartz.JobBuilder.newJob;
 import static org.quartz.TriggerBuilder.newTrigger;
 import static org.quartz.SimpleScheduleBuilder.simpleSchedule;
 import static org.quartz.CronScheduleBuilder.cronSchedule;
-
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
-
-import java.util.Date;
 
 public class Program {
-    //private static final Logger _log = LoggerFactory.getLogger(Program.class);
-
     public static void main( String[] args )
     {
         try
@@ -52,10 +47,8 @@ public class Program {
 
         // 开启调度器
         scheduler.start();
-        //_log.info("------- 已开始计划 -----------------");
         System.out.println("------- 已开始计划 -----------------");
 
-        //_log.info("------- 正在等待20秒 -------------");
         System.out.println("------- 正在等待20秒 -------------");
         try {
             Thread.sleep(20L * 1000L);
@@ -63,7 +56,6 @@ public class Program {
         }
 
         scheduler.shutdown(true);
-        //_log.info("------- 已关闭计划 -----------------");
         System.out.println("------- 已关闭计划 -------------");
     }
 
@@ -79,7 +71,6 @@ public class Program {
 
         // 把任务、Cron触发器加入调度器
         Date ft = scheduler.scheduleJob(job, cronTrigger);
-        //_log.info(jft + "时计划执行【" + job.getKey() + "】，且基于【" + cronTrigger.getCronExpression() + "】Cron表达式重复执行。");
         System.out.println(ft + "时计划执行【" + job.getKey() + "】，且基于【" + cronTrigger.getCronExpression() + "】Cron表达式重复执行。");
 
         // 创建【任务22】
@@ -88,15 +79,12 @@ public class Program {
         cronTrigger = newTrigger().withIdentity("触发器名称22", "触发器组名").withSchedule(cronSchedule("15 0/2 * * * ?")).build();
 
         ft = scheduler.scheduleJob(job, cronTrigger);
-        //_log.info(jft + "时计划执行【" + job.getKey() + "】，且基于【" + cronTrigger.getCronExpression() + "】Cron表达式重复执行。");
         System.out.println(ft + "时计划执行【" + job.getKey() + "】，且基于【" + cronTrigger.getCronExpression() + "】Cron表达式重复执行。");
 
         // 开启调度器
         scheduler.start();
-        //_log.info("------- 已开始计划 -----------------");
         System.out.println("------- 已开始计划 -----------------");
 
-        //_log.info("------- 正在等待5分钟 -------------");
         System.out.println("------- 正在等待5分钟 -------------");
         try {
             Thread.sleep(300L * 1000L);
@@ -104,11 +92,9 @@ public class Program {
         }
 
         scheduler.shutdown(true);
-        //_log.info("------- 已关闭计划 -----------------");
         System.out.println("------- 已关闭计划 -------------");
 
         SchedulerMetaData metaData = scheduler.getMetaData();
-        //_log.info(String.format("%n共执行了%d个任务。", metaData.getNumberOfJobsExecuted()));
         System.out.printf("共执行了%d个任务。%n", metaData.getNumberOfJobsExecuted());
     }
 
@@ -141,10 +127,8 @@ public class Program {
 
         // 开启调度器
         scheduler.start();
-        //_log.info("------- 已开始计划 -----------------");
         System.out.println("------- 已开始计划 -----------------");
 
-        //_log.info("------- 正在等待20秒 -------------");
         System.out.println("------- 正在等待20秒 -------------");
         try {
             Thread.sleep(20L * 1000L);
@@ -152,11 +136,9 @@ public class Program {
         }
 
         scheduler.shutdown(true);
-        //_log.info("------- 已关闭计划 -----------------");
         System.out.println("------- 已关闭计划 -------------");
 
         SchedulerMetaData metaData = scheduler.getMetaData();
-        //_log.info(String.format("%n共执行了%d个任务。", metaData.getNumberOfJobsExecuted()));
         System.out.printf("共执行了%d个任务。%n", metaData.getNumberOfJobsExecuted());
     }
 }
