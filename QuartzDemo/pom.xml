@@ -4,17 +4,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>demo.quartz</groupId>
-  <artifactId>quartz</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>QuartzJobs</module>
-      <module>QuartzJobs</module>
-      <module>QuartzJobs</module>
-    </modules>
+  <groupId>quartz</groupId>
+  <artifactId>QuartzDemo</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
 
-    <name>quartz</name>
+  <name>QuartzDemo</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
