@@ -31,7 +31,6 @@ public class MetricsDemo {
         try {
             Random random = new Random(System.currentTimeMillis() & 0x0000FFFF);
             long n = random.nextInt(1000);
-            //System.out.println("searchFlight()睡眠" + n + "ms。");
             Thread.sleep(n);
         }
         catch(InterruptedException e)
@@ -53,7 +52,6 @@ public class MetricsDemo {
             try {
                 Random random = new Random(System.currentTimeMillis() & 0x0000FFFF);
                 n = random.nextInt(1000);
-                //System.out.println("creatOrder()睡眠" + n + "ms。");
                 Thread.sleep(n);
             }
             catch(InterruptedException e)
@@ -79,16 +77,12 @@ public class MetricsDemo {
                 Meter orderMoneyCount = metrics.meter("MetricsDemo.BuyerB.OrderMoneyCount");
                 orderMoneyCount.mark(n);
             }
-
-            //System.out.println(System.currentTimeMillis() + "下单成功，下单金额：" + n + "。");
         }
         catch (Exception e)
         {
             // 统计失败下单量
             Meter orderErrorCount = metrics.meter("MetricsDemo.OrderErrorCount");
             orderErrorCount.mark();
-
-            //System.out.println(System.currentTimeMillis() + "下单失败。");
         }
     }
 
