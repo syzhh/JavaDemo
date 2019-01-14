@@ -1,5 +1,5 @@
 # JavaDemo
-Java案例代码
+Java演示代码
 
 ## 新书上市：
 + 京东链接：https://item.jd.com/12477683.html
